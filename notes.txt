@@ -1,0 +1,40 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer=""></script>
+
+Summary UNITS:
+
+font-size: rem, 1rem = 16px
+width: % in combination with a max-width, ch = 45 (anders te lange tekst)
+height: question urself "do i rly need to set height" if yes -> use a min-height
+padding/margin: rem or em, kevin often uses em for padding of buttons
+media queries: em
+
+px only for little things like shadows, borders etc.
+
+Summary POSITIONING:
+
+1. static: Default one.
+2. relative : Same as static. But lets you add top, right, bottom, left. 
+Makes it move relative to it's normal position
+3. absolute: Removes from the flow and positions absolute wrt to the parent. 
+Parent has to be relative or absolute for top, right, bottom, left to work. 
+Else it considers the main html element as the parent. => used with relative in parent
+4. fixed : Fixed to a place. Doesn't give two shits about the parent. 
+Always considers html element as the parent. Stays there when scrolled.
+5. sticky : Relative ( when normal) + fixed ( when scrolled). The values for top, right, 
+bottom, left become active when scrolled
+
+
+CUSTOM PROPERTIES:
+
+:root {
+    --name-variabele: value;
+    --primary-clr: #456;
+    -- = teken van custom property
+}
+
+als je de primary kleur wilt gebruiken: var(--primary-clr, backupkleur);
+
+prefers-color-scheme gaat bij useragent kijken welk thema je wilt
