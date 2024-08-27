@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 800px; 
+    height: 800px; 
+    justify-content: left;
+}   
+
+.grid {
+    box-sizing: border-box;
+    border: 1px dotted black;
+}
+
+/* Wat deed ik fout:
+
+1. Als je de container geen afmetingen geeft, dan ge je de
+div elementen niet zien. 
+
+2. Verder om alle div elementen een vierkant te maken
+moest ik width en height voor afmetingen gebruiken. 
+ 
+3. als je width 80vw (viewwindow) dan past het op elk scherm, 
+maar dan gaan je vierkantjes niet meer vierkantig zijn. Zelfde reden
+waarom ik met flex-basis geen vierkanten kreeg
+
+4. Justify-content gaat op je main-axis inspelen. Als je flex-wrap gebruikt
+dan ga je niet justifyen op 'meerdere' main-axes bijkomend:
+
+Additionally, because you have specified a fixed width (800px) for the 
+#container, this means that the content inside will wrap and take up that 
+width fully, leaving no extra space to be "justified."
+
+5. Als je elementen overschrijft, dan moet je ook nieuwe listeners toevoegen
+
+*/

@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+button {
+    padding: 8px;
+    font-size: 24px;
+}
+
+.results {
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.scores {
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+.row {
+    display: flex;
+    padding-right: 210px;
+    margin-bottom: 20px;
+  }
+
+.label {
+    width: 60%;
+    text-align: right;
+  }
+
+#scorehuman, #scorepc {
+    width: 40%;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#round, .rounder {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#round {
+    margin-left: 10px;
+}
+
+.cont {
+    display: flex;
+    justify-content:center;
+
+}
+
+#result {
+    text-align: center;
+    font-size: 40px;
+}
